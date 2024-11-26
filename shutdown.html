@@ -1,0 +1,126 @@
+<!DOCTYPE HTML>
+<!--
+	Photon by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Photon by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<section id="header">
+				<div class="inner">
+					<h1><strong><h2>SHUTDOWN</h2></strong></h1>
+					<p>A robotic twinstick shooter</p>
+					
+					<ul class="actions stacked">
+						<li><a href="index.html" class="button">Return</a></li>
+					</ul>
+				</div>
+			</section>
+
+		<!-- One -->
+			<section id="one" class="main style1">
+				<div class="container">
+					<div class="row gtr-150">
+						
+						<div class="col-6 col-12-medium imp-medium">
+							<iframe width="640" height="360" src="https://www.youtube.com/embed/wxTYrPg1zmY" title="SHUTDOWN Showcase" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+						</div>
+						<div class="col-6 col-12-medium">
+							<header class="major">
+								<h2>Stats</h2>
+							</header>
+							<ul class="alt">
+								<li>Made in 8 weeks</li>
+								<li>2 developers, 3 artists</li>
+								<li>Worked on coding and particle systems</li>
+								<li>Made with Unity and C#</li>
+							</ul>
+						</div>
+					</div>
+					<p>
+					<br><b>Enemy logic</b>
+					<br>For this project, most of my work went into the enemies, for which I made all the logic. There's two types of enemies, both of which I made pretty extensive. Both have a Field Of View indicator, that shows where they can see. This is done through generating a custom mesh off of a bunch of raycasts.
+					<br> The gunner enemy shoots projectiles. It predicts where the player will be when the projectile hits it, and adjusts its aim accordingly.
+					<br> The other type is the bash enemy, which gets ready and then charges at the player. If it doesn't hit anything it turns around and starts getting ready to charge again, and if it hits the player or a wall it'll create sparks and freeze for a few seconds.
+					<br> All of the enemies' settings are made easily accessible from the Unity editor; view range & angle, attack range, shooting speed and projectile count and spread and randomization, time per phase in the bash attack, etc.
+					<br> <a href="https://gist.github.com/N-Hanssens/4ca012eb741ddb8062c5f3614e852e2f">You can read through the main enemy script here</a>
+					<br><br><b>Minigames</b>
+					<br> I also made all the minigames on the third level; one with randomized key movements that you have to follow, one with a randomly generated maze with certain points you have to go over, and a wire connection puzzle where you have to match the colours.
+					<br><br><b>Visuals</b>
+					<br> For most of my work I also did the visuals myself - the particles for the enemy and the laser gate in the third floor, and the sprites for the minigames.
+					<br><br><b>Miscellaneous</b>
+					<br> Lastly, I also did a bunch of various smaller bits of work. I made it so the player can switch between weapons (which will switch which arm they shoot from). I also made an animation for the keycard menu, although we ended up scrapping that. I did the timer for the third floor, the camera (we later decided to keep the camera stationary, so it's only using the smoothing) and gizmos for debugging on most of my scripts.
+					
+					<br>
+					<div class="buh">
+						<div>
+							<img src="images/bash.gif" width="600" height="400" alt="" />
+							<ul>
+								<li>Finalized bash enemy</li>
+							</ul>
+						</div>
+						<div>
+							<img src="images/aimbot.gif" width="400" height="400" alt="" />
+							<ul>
+								<li>Enemy predicting player movement</li>
+							</ul>
+						</div>
+						<style>
+						.buh {
+							display: flex;
+							flex-direction: row;
+							gap: 30px;
+							}
+						</style>
+					</div>
+
+				
+					
+							<img src="images/witness.gif" width="1030" height="400" alt="" />
+							<ul>
+								<li>Generating a random maze puzzle</li>
+							</ul>
+							<img src="images/bullet.gif" width="600" height="400" alt="" />
+							<ul>
+								<li>Particle system for bullets</li>
+							</ul>
+					</div>
+					</p>
+			</section>
+			
+			<pre>
+				<code>
+					aaaaaaaaaaaaa
+				</code>
+				</pre>
+
+
+		<!-- Footer -->
+			<section id="footer">
+				<ul class="icons">
+					<li><a href="#" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
+				</ul>
+				<ul class="copyright">
+					<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+				</ul>
+			</section>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

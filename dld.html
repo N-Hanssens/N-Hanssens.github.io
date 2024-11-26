@@ -1,0 +1,126 @@
+<!DOCTYPE HTML>
+<!--
+	Photon by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Photon by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<section id="header">
+				<div class="inner">
+					<h1><strong><h2>DeLorean Dash</h2></strong></h1>
+					<p>Gravity-defying night racing</p>
+					
+					<ul class="actions stacked">
+						<li><a href="index.html" class="button">Return</a></li>
+					</ul>
+				</div>
+			</section>
+
+		<!-- One -->
+			<section id="one" class="main style1">
+				<div class="container">
+					<div class="row gtr-150">
+						
+						<div class="col-6 col-12-medium imp-medium">
+							<iframe width="640" height="360" src="https://www.youtube.com/embed/dghcRFMJGic" title="Delorean Dash Showcase" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+						</div>
+						<div class="col-6 col-12-medium">
+							<header class="major">
+								<h2>Stats</h2>
+							</header>
+							<ul class="alt">
+								<li>Made in 6 weeks</li>
+								<li>3 developers, 3 artists</li>
+								<li>Worked on coding and visuals</li>
+								<li>Made with Unity and C#</li>
+							</ul>
+						</div>
+					</div>
+					<p>
+					<br><br><b>Gravity physics system</b>
+					<br> I made the gravity system for this game, which allows the car to keep driving regardless of how the road twists and turns. It constantly takes the average between the angles of the floor below the front and the back of the car, and sets the gravity's direction to that.
+					<br> You can also press space to flip gravity, which rotates the player and then starts to fall.
+					<br><br><b>Music sync lighting</b>
+					<br> My favourite work on this project is the light bars on the side of the track - they pulse along with the music, using a shader graph that makes it so the center of the pulse is at the player. The pulses are decided by a list where you can select the type of pulse (in duration), the colour, the exact beat it starts on (automatically calculated from the BPM of the song) and the amount of times you want it to repeat before going to the next pulse (and the interval between each).
+					<br><br><b>Miscellaneous</b>
+					<br> I also made the checkpoint system, the camera (which was some extra work as it needed to look clean during the gravity flip), and the menus.
+					<br> 
+					
+					<br>
+					<div class="buh">
+						<div>
+							<img src="images/pulse.gif" width="600" height="400" alt="" />
+							<ul>
+								<li>Light pulses on a straight track</li>
+							</ul>
+						</div>
+						<div>
+							<img src="images/pulseencoding.gif" width="400" height="400" alt="" />
+							<ul>
+								<li>Encoding which pulse to trigger when</li>
+							</ul>
+						</div>
+						<style>
+						.buh {
+							display: flex;
+							flex-direction: row;
+							gap: 30px;
+							}
+						</style>
+					</div>
+
+				
+					<div class="buh">
+						<div>
+							<img src="images/pulsetypes.png" width="400" height="400" alt="" />
+							<ul>
+								<li>Setting the different types of pulses</li>
+							</ul>
+						</div>
+						<div>
+							<img src="images/bordergraph.png" width="600" height="400" alt="" />
+							<ul>
+								<li>Shader graph for the light bars</li>
+							</ul>
+						</div>
+						<style>
+						.buh {
+							display: flex;
+							flex-direction: row;
+							gap: 30px;
+							}
+						</style>
+					</div>
+					</div>
+		
+
+		<!-- Footer -->
+			<section id="footer">
+				<ul class="icons">
+					<li><a href="#" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
+				</ul>
+				<ul class="copyright">
+					<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+				</ul>
+			</section>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

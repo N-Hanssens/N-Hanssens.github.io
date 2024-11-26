@@ -1,0 +1,10 @@
+{
+  version: 1,
+  mediaFileName: 'deldash.mp4',
+  cutSegments: [
+    {
+      start: 7.516666666666667,
+      name: '',
+    },
+  ],
+}

@@ -1,0 +1,109 @@
+<!DOCTYPE HTML>
+<!--
+	Photon by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Photon by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<section id="header">
+				<div class="inner">
+					<h1><strong><h2>Sands of Ruin</h2></strong></h1>
+					<p>Puzzles in the desert sands</p>
+					
+					<ul class="actions stacked">
+						<li><a href="index.html" class="button">Return</a></li>
+					</ul>
+				</div>
+			</section>
+
+		<!-- One -->
+			<section id="one" class="main style1">
+				<div class="container">
+					<div class="row gtr-150">
+						
+						<div class="col-6 col-12-medium imp-medium">
+							<video width="640" height="360" controls>
+								<source src="images/SOR trailer.mp4" type="video/mp4">
+							  </video>
+						</div>
+						<div class="col-6 col-12-medium">
+							<header class="major">
+								<h2>Stats</h2>
+							</header>
+							<ul class="alt">
+								<li>Made in 8 weeks</li>
+								<li>2 developers, 3 artists</li>
+								<li>Worked on coding and particles</li>
+								<li>Made with Unity and C#</li>
+							</ul>
+						</div>
+					</div>
+					<p>
+						
+					<h1><b>Play it yourself on: </b>
+						<a href="https://eminspace.itch.io/sands-of-ruin">itch.io</a>
+						</h1>
+					<b>Lasers and reflection</b>
+					<br> The part that took me the most work in this project were the lasers. They stop at walls, and can reflect off of set surfaces (with the right angle, of course). There's also some objects which the laser can go through, but the player and held objects cannot. You can set the maximum amount of reflects to prevent memory leaks.
+					<br> If the laser hits specific objects, that gets triggered and activates as an input.
+					<br><br><b>Input/output</b>
+					<br> I also made the buttons and the doors. The buttons have two types; one that needs to be held down and one that toggles each time it's triggered. The doors can hold multiple inputs, and are only activated if all of the inputs are active simultaneously.
+					<br><br><b>Particles</b>
+					<br> Another thing I added were the particles for holding an object with the gravity gun and for shooting it. The held object particles extend to wherever the held object is, and as such has to vary in length.
+					<br><br><b>Miscellaneous</b>
+					<br> I made indicators that show which input is linked to which output. Initially I had automatically generated lines which took quite some work, but unfortunately we eventually decided it looked weird and went with icons that light up instead. 
+					<br> Some of the puzzles were also designed by me, including all of the laser puzzles. 
+					<br> Lastly, I also made the pause menu, which also includes an for a speedrun timer that can be toggled on and off.
+					
+					<br><br>
+					<div class="buh">
+						<div>
+							<img src="images/laser.gif" width="600" height="400" alt="" />
+							<ul>
+								<li>Lasers reflecting and activating doors</li>
+							</ul>
+						</div>
+						<div>
+							<img src="images/gravgun.gif" width="600" height="400" alt="" />
+							<ul>
+								<li>Gravity gun particles for holding an object</li>
+							</ul>
+						</div>
+						<style>
+						.buh {
+							display: flex;
+							flex-direction: row;
+							gap: 30px;
+							}
+						</style>
+					</div>
+					</div>
+		
+
+		<!-- Footer -->
+			<section id="footer">
+				<ul class="icons">
+					<li><a href="#" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
+				</ul>
+			</section>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
